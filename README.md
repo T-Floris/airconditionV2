@@ -16,11 +16,18 @@
 
 Use the images below to understand the wiring of the setup
 
+Image 1
 ![ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIOs-Copy](https://user-images.githubusercontent.com/40162593/133789754-861cc8f0-d1d8-422c-8ef9-1a139d93898a.png)
+Image 2
 ![DS1621_8-pin](https://user-images.githubusercontent.com/40162593/133790604-0b006b64-3559-432f-9224-510e0dffe16e.png)
+Image 3
 ![led-labelled](https://user-images.githubusercontent.com/40162593/133800583-c5de258b-33f9-498c-84ea-cdc249346c64.png)
+Image 4
+![Breadboard](https://user-images.githubusercontent.com/40162593/133803772-38a72373-75a0-46a4-942b-07bff7b0160a.png)
 
 ### Place the ESP32 DEVKIT in between to two breadboard
+
+1. Place the ESP32 DEVKIT on 
 
 ### Setting up the DS1621 to the ESP32 DEVKIT.
 
