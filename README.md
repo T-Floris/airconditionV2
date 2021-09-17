@@ -19,4 +19,4 @@ Use the images below to understand the wiring of the setup
 ![DS1621_8-pin](https://user-images.githubusercontent.com/40162593/133790604-0b006b64-3559-432f-9224-510e0dffe16e.png)
 
 1. connect the 3v3 GPIO on the ESP32 DEVKIT to the 8 pin (vdd) on the DS1621
-2. test^2
+2. test^2<sup>superscript</sup>
