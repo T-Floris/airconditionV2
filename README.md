@@ -24,10 +24,16 @@ Use the images below to understand the wiring of the setup
 
 ### Place the ESP32 DEVKIT in between to two breadboard
 
-1. Place the ESP32 DEVKIT on BreadBoard, where your connect the 3v3 GPIO to A56 and GPIO23 (VSPI MOSI) to A42 (Make sure all the other pin's is pressed down in the numbers in between).
+1. Place the ESP32 DEVKIT on the BreadBoard, where your connect the 3v3 GPIO to A56 and GPIO23 (VSPI MOSI) to A42 (Make sure all the other pin's is pressed down in the numbers in between).
 2. Take the other BreadBoard, and connect the VIN GPIO to J56 and EN GPIO to J42 (Make sure all the other pin's is pressed down in the numbers in between).
 
-### Place the ESP32 DEVKIT in between to two breadboard
+### Place the DS1621_8-pin on breadboard
+
+1. Place the DS1621 on the BreadBoard, where your connect pin 1 to E33 and pin 5 to F36 
+
+### Place the LED's on breadboard
+
+1. 
 
 ### Setting up the DS1621 to the ESP32 DEVKIT.
 
