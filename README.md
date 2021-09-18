@@ -48,21 +48,36 @@ Use the images below to understand the wiring of the setup
 2. 1. Place the resistor on the 2. Breadboard, where you connect the 1. pin to E50 and the 2. pin to H50 (make sour that it is connectet to GPIO26 one the ESP32 DEVKIT.
 3. 1. Place the resistor on the 2. Breadboard, where you connect the 1. pin to E51 and the 2. pin to H51 (make sour that it is connectet to GPIO27 one the ESP32 DEVKIT.
 
-### Setting up the DS1621 to the ESP32 DEVKIT.
+### Setting up the DS1621 to the ESP32 DEVKIT (All on 1. BreadBoard).
 
 1. Connect pin 1 (SDA) on the DS1621 to GPIO21 (I2C SDA) on the ESP32 DEVKIT.
-2. Connect pin 2 (SCL) on the DS1621 to GPIO22 (I2C SCL) on the ESP32 DEVKIT.
-3. Connect pin 7, 6 and 5 (A<sub>0</sub>, A<sub>1</sub> and A<sub>2</sub>) on the DS1621 to pin 4 (GND).
-4. Connect pin 4 (GND) to a GND GPIO on the ESP32 DEVKIT.
-5. Connect pin 8 (V<sub>DD</sub>) on the DS1621 to the 3v3 GPIO on the ESP32 DEVKIT.
+   - Connect a wire from D33 to D46
+3. Connect pin 2 (SCL) on the DS1621 to GPIO22 (I2C SCL) on the ESP32 DEVKIT.
+   - Connect a wire from C34 to C43
+5. Connect pin 7, 6 and 5 (A<sub>0</sub>, A<sub>1</sub> and A<sub>2</sub>) on the DS1621 to pin 4 (GND).
+   - Connect a wire from I34 to B36
+   - Connect a wire from H35 to C36
+   - Connect a wire from G36 to D36
+7. Connect pin 4 (GND) to a GND GPIO on the ESP32 DEVKIT.
+   - Connect a wire from A36 to E55 
+8. Connect pin 8 (V<sub>DD</sub>) on the DS1621 to the 3v3 GPIO on the ESP32 DEVKIT.
+   - Connect a wire from J33 to B56
 
 ### Setting up the LED's to the ESP32 DEVKIT.
 
-1. Connect all the led´s to negative.
-   - connect a wire from J3 to Z3 (all on 1. BreadBoard)
-   - connect a wire from J6 to Z9 (all on 1. BreadBoard)
-   - connect a wire from J13 to Z13 (all on 1. BreadBoard)
+1. Connect all the led´s to negative (All on 1. BreadBoard).
+   - connect a wire from J3 to Z3
+   - connect a wire from J6 to Z9
+   - connect a wire from J13 to Z13 
+   - connect a wire from E55 to Z55
 2. Connect all the led´s to resistors
    - connect a wire from G1 (1. BreadBoard) to D49 (2. BreadBoard)
    - connect a wire from G6 (1. BreadBoard) to D50 (2. BreadBoard)
    - connect a wire from G11 (1. BreadBoard) to D51 (2. BreadBoard)
+
+## Setting up Arduino IDE
+1. Folw this tutorial for setting op the EPS32 DEVKIT https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+2. Install libraries
+   - NTPClient
+
+
