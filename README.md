@@ -5,9 +5,9 @@
 1. 2 * Breadboard 
 2. 14 * wires
 3. 3 * 5mm LED
-  - 1 red 
-  - 1 green
-  - 1 blue
+   - 1 red 
+   - 1 green
+   - 1 blue
 5. 3 * 220Ω resistor
 6. 1 * DS1621 Temperature Sensor Thermometer
 7. 1 * DOIT ESP32 DEVKIT V1
