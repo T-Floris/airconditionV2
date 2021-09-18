@@ -34,7 +34,7 @@ Use the images below to understand the wiring of the setup
 
 ### Place the DS1621_8-pin on breadboard
 
-1. Place the DS1621 on the BreadBoard, where your connect pin 1 to E33 and pin 5 to F36 
+1. Place the DS1621 on the BreadBoard, where your connect pin 1 (SDA) to E33 and pin 5 to F36 (A<sub>2</sub>)
 
 ### Place the LED's on breadboard
 
