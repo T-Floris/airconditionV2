@@ -14,7 +14,8 @@
 
 ## Breadboard
 <!--![airconditionV2](https://user-images.githubusercontent.com/40162593/133789003-07c5d6a3-4d97-4ab8-a157-d5a57662b16a.png)-->
-![Breadboardv2](https://user-images.githubusercontent.com/40162593/133884399-d902ef32-fdb9-48b6-b0b6-ae164d286895.png)
+<!--![Breadboardv2](https://user-images.githubusercontent.com/40162593/133884399-d902ef32-fdb9-48b6-b0b6-ae164d286895.png)-->
+![Breadboardv3](https://user-images.githubusercontent.com/40162593/133884882-ebc3fb25-db2f-4b40-9e93-8d55dbf0a8c2.png)
 
 ## Setting up the board
 
@@ -29,16 +30,23 @@ Use the images below to understand the wiring of the setup
 
 ### Place the ESP32 DEVKIT in between to two breadboard
 
-1. Place the ESP32 DEVKIT on the BreadBoard, where your connect the 3v3 GPIO to A56 and GPIO23 (VSPI MOSI) to A42 (Make sure all the other pin's is pressed down in the numbers in between).
-2. Take the other BreadBoard, and connect the VIN GPIO to J56 and EN GPIO to J42 (Make sure all the other pin's is pressed down in the numbers in between).
+1. Place the ESP32 DEVKIT on the 1. BreadBoard, where your connect the 3v3 GPIO to A56 and GPIO23 (VSPI MOSI) to A42 (Make sure all the other pin's is pressed down in the numbers in between).
+2. Take the 2. BreadBoard, and connect the VIN GPIO to J56 and EN GPIO to J42 (Make sure all the other pin's is pressed down in the numbers in between).
 
-### Place the DS1621_8-pin on breadboard
+### Place the DS1621_8-pin on BreadBoard
 
-1. Place the DS1621 on the BreadBoard, where your connect pin 1 (SDA) to E33 and pin 5 to F36 (A<sub>2</sub>)
+1. Place the DS1621 on the 1. BreadBoard, where your connect pin 1 (SDA) to E33 and pin 5 to F36 (A<sub>2</sub>)
 
-### Place the LED's on breadboard
+### Place the LED's on BreadBoard
 
-1. 
+1. place the red led on the 1. Breadboard, where you connect the c- pin to G1 and a+ to G3
+2. place the green led on the 1. Breadboard, where you connect the c- pin to G6 and a+ to G8
+3. place the blue led on the 1. Breadboard, where you connect the c- pin to G11 and a+ to G13
+
+### Place the resistors on the BreadBoard
+1. Place the resistor on the 2. Breadboard, where you connect the 1. pin to E49 and the 2. pin to H49 (make sour that it is connectet to GPIO25 one the ESP32 DEVKIT.
+2. 1. Place the resistor on the 2. Breadboard, where you connect the 1. pin to E50 and the 2. pin to H50 (make sour that it is connectet to GPIO26 one the ESP32 DEVKIT.
+3. 1. Place the resistor on the 2. Breadboard, where you connect the 1. pin to E51 and the 2. pin to H51 (make sour that it is connectet to GPIO27 one the ESP32 DEVKIT.
 
 ### Setting up the DS1621 to the ESP32 DEVKIT.
 
@@ -50,4 +58,11 @@ Use the images below to understand the wiring of the setup
 
 ### Setting up the LED's to the ESP32 DEVKIT.
 
-1. 
+1. Connect all the led´s to negative.
+   - connect a wire from J3 to Z3 (all on 1. BreadBoard)
+   - connect a wire from J6 to Z9 (all on 1. BreadBoard)
+   - connect a wire from J13 to Z13 (all on 1. BreadBoard)
+2. Connect all the led´s to resistors
+   - connect a wire from G1 (1. BreadBoard) to D49 (2. BreadBoard)
+   - connect a wire from G6 (1. BreadBoard) to D50 (2. BreadBoard)
+   - connect a wire from G11 (1. BreadBoard) to D51 (2. BreadBoard)
