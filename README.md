@@ -4,10 +4,13 @@
 
 1. 2 * Breadboard 
 2. 14 * wires
-3. 3 * 5mm LED 
-4. 3 * 220Ω resistor
-5. 1 * DS1621 Temperature Sensor Thermometer
-6. 1 * DOIT ESP32 DEVKIT V1
+3. 3 * 5mm LED
+ - 1 red 
+ - 1 green
+ - 1 blue
+5. 3 * 220Ω resistor
+6. 1 * DS1621 Temperature Sensor Thermometer
+7. 1 * DOIT ESP32 DEVKIT V1
 
 ## Breadboard
 ![airconditionV2](https://user-images.githubusercontent.com/40162593/133789003-07c5d6a3-4d97-4ab8-a157-d5a57662b16a.png)
