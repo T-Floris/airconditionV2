@@ -12,13 +12,13 @@
 6. 1 * DS1621 Temperature Sensor Thermometer.
 7. 1 * DOIT ESP32 DEVKIT V1.
 
-## Breadboard
+## Breadboard.
 <!--![airconditionV2](https://user-images.githubusercontent.com/40162593/133789003-07c5d6a3-4d97-4ab8-a157-d5a57662b16a.png)-->
 <!--![Breadboardv2](https://user-images.githubusercontent.com/40162593/133884399-d902ef32-fdb9-48b6-b0b6-ae164d286895.png)-->
 <!--![Breadboardv3](https://user-images.githubusercontent.com/40162593/133884882-ebc3fb25-db2f-4b40-9e93-8d55dbf0a8c2.png)-->
 ![Breadboardv4](https://user-images.githubusercontent.com/40162593/133886941-7c4b6f03-19c2-4000-af02-df526ff3942f.png)
 
-## Setting up the board
+## Setting up the board.
 
 Use the images below to understand the wiring of the setup.
 
