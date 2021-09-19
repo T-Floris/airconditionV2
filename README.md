@@ -91,7 +91,7 @@ Use the images below to understand the wiring of the setup
 4. Run the program.
 5. Look at the "Serial monitor" and go to the ip addrase in a browser.
 ![ip](https://user-images.githubusercontent.com/40162593/133924877-ca66348f-892f-46a3-bde3-3810b59405fe.PNG)
-6. now your are done, and you will be looking at a sceren the look like this.
+6. now you'er done, and you will be looking at a sceren the look like this.
 ![Webside](https://user-images.githubusercontent.com/40162593/133924949-2ae2d302-e735-4287-8878-1708a402530d.PNG)
   
 
