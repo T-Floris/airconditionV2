@@ -116,73 +116,73 @@ void loop(){
             client.println("Connection: close");
             client.println();
 
-            //////////////////////////set confTemp/////////////////////////////////
+            //////////////////////Setting up the buttons////////////////////////////
 
-            if (header.indexOf("GET /confTemp/up") >= 0) {
-              setConfTempUp();
-              header = "";
-            }
-            if (header.indexOf("GET /confTemp/down") >= 0) {
-              setConfTempDown();
-              header = "";
-            }
+              //////////////////////////set confTemp/////////////////////////////////
+  
+              if (header.indexOf("GET /confTemp/up") >= 0) {
+                setConfTempUp();
+                header = "";
+              }
+              if (header.indexOf("GET /confTemp/down") >= 0) {
+                setConfTempDown();
+                header = "";
+              }
+  
+              /////////////////////////Set saveTemp///////////////////////////////
+  
+              /* Set saveTemp  */
+              if (header.indexOf("GET /saveTemp/up") >= 0) {
+                setSaveTempUp();
+                header = "";
+              }
+              if (header.indexOf("GET /saveTemp/down") >= 0) {
+                setSaveTempDown();
+                header = "";
+              }
+  
+  
+              /////////////////////////Activate and deactivate/////////////////////////
+              if (header.indexOf("GET /conf/activate") >= 0) {
+                confActive = true;
+                saveActive = false;  
+              }
+  
+              if (header.indexOf("GET /conf/deactivate") >= 0) {
+                confActive = false;       
+                //sparA = false;
+              }
+  
+              /* define spar temp active and deactive */
+              if (header.indexOf("GET /save/activate") >= 0) {
+                confActive = false;
+                saveActive = true;  
+              }
+  
+              if (header.indexOf("GET /save/deactivate") >= 0) {
+                //confA = false;
+                saveActive = false;
+         
+              }
+  
+              /////////////////////////////set mode detect/////////////////////////////
+              // comfortable mode
+              if(confActive == true && saveActive == false){
+                confTempDetect();              
+              }
+              // save mode
+              else if(confActive == false && saveActive == true){
+                saveTempDetect();              
+              }
+              // turn off system
+              else{
+                turnOff();
+              }
 
-            /////////////////////////Set saveTemp///////////////////////////////
-
-            /* Set saveTemp  */
-            if (header.indexOf("GET /saveTemp/up") >= 0) {
-              setSaveTempUp();
-              header = "";
-            }
-            if (header.indexOf("GET /saveTemp/down") >= 0) {
-              setSaveTempDown();
-              header = "";
-            }
-
-
-            /////////////////////////Activate and deactivate/////////////////////////
-            if (header.indexOf("GET /conf/activate") >= 0) {
-              confActive = true;
-              saveActive = false;  
-            }
-
-            if (header.indexOf("GET /conf/deactivate") >= 0) {
-              confActive = false;       
-              //sparA = false;
-            }
-
-            /* define spar temp active and deactive */
-            if (header.indexOf("GET /save/activate") >= 0) {
-              confActive = false;
-              saveActive = true;  
-            }
-
-            if (header.indexOf("GET /save/deactivate") >= 0) {
-              //confA = false;
-              saveActive = false;
-       
-            }
-
-            /////////////////////////////set mode detect/////////////////////////////
-            // comfortable mode
-            if(confActive == true && saveActive == false){
-              confTempDetect();              
-            }
-            // save mode
-            else if(confActive == false && saveActive == true){
-              saveTempDetect();              
-            }
-            // turn off system
-            else{
-              turnOff();
-            }
-
-            
-            
+            //////////////////////End Setting up the buttons/////////////////////////           
 
             
             ///////////////////////////WebSide Header////////////////////////////////
-
             
             // Display the HTML web page
             client.println("<!DOCTYPE html><html>");
@@ -217,9 +217,9 @@ void loop(){
             client.print("<div class='child flex-child'><p><a href=\"/confTemp/down\"><button class=\"button\">-</button></a></p></div>");
             client.print("</div>");
           
-          /* set temp comfortable */
-          client.println("<p><a href=\"/conf/activate\"><button class=\"button\">activate</button></a></p>");
-          client.println("<p><a href=\"/conf/deactivate\"><button class=\"button\">deactivate</button></a></p>");
+            // set temp comfortable 
+            client.println("<p><a href=\"/conf/activate\"><button class=\"button\">activate</button></a></p>");
+            client.println("<p><a href=\"/conf/deactivate\"><button class=\"button\">deactivate</button></a></p>");
 
             //////////////////Show and choice temperatur (saving)/////////////////////
 

@@ -18,7 +18,7 @@ unsigned long mins = timeClient.getMinutes();
 String minsStr = mins < 10 ? "0" + String(mins) : String(mins);
 
 
-
+// combines the 2 string together 
 String hoursMinutesReturn = hoursStr + ":" + minsStr;
 
 return String( hoursMinutesReturn );

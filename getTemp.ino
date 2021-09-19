@@ -1,10 +1,11 @@
+// gets the temperature to display on the webside
 String GetTemp(){
-    // get temperature in tenths °C
+  // get temperature in tenths °C
   int16_t c_temp = get_temperature();
   
 
 
- 
+  // place a "-" in front of the char "c_buffer"
   if(c_temp < 0) {   // if temperature < 0 °C
     c_temp = abs(c_temp);  // absolute value
     sprintf(c_buffer, "-%02u.%1u%cC ", c_temp / 10, c_temp % 10, 176);
@@ -19,27 +20,16 @@ String GetTemp(){
   return String( c_buffer );
 }
 
+// make you able to calculate if with the temperature
 float rTemp(){
-    int16_t c_temp = get_temperature();
-     
-  if(c_temp < 0) {   // if temperature < 0 °C
-    c_temp = abs(c_temp);  // absolute value
-    sprintf(c_buffer, "-%02u.%1u ", c_temp / 10, c_temp % 10);
-  }
-  else {
-    if (c_temp >= 1000)    // if temperature >= 100.0 °C
-      sprintf(c_buffer, "%03u.%1u", c_temp / 10, c_temp % 10);
-    else
-      sprintf(c_buffer, " %02u.%1u", c_temp / 10, c_temp % 10);
-  }
 
-  String String_c_buffer( c_buffer );
-  float floatTempC = String_c_buffer.toFloat();
+  float floatTempC = GetTemp().toFloat(); // convert the string to a flot
   Serial.println(floatTempC);
   return floatTempC;
   
 }
 
+// gets the raw °C temperature from the DS1621
 int16_t get_temperature() {
   
   Wire.beginTransmission(DS1621_ADDRESS); // connect to DS1621 (send DS1621 address)
