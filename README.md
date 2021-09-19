@@ -77,21 +77,21 @@ Use the images below to understand the wiring of the setup.
    - connect a wire from G11 (1. BreadBoard) to D51 (2. BreadBoard).
 
 ## Setting up Arduino IDE.
-1. Folw this tutorial for setting op the EPS32 DEVKIT https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/.
+1. Follow  this tutorial for setting op the EPS32 DEVKIT https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/.
 2. Install libraries.
    - NTPClient.
 
 ## Connect to the ESP32 DEVKIT.
 1. Open the program.
-   - change the "ssid" with the name of your wifi.
-   - the "password" with the password to your wifi. 
+   - change  the "ssid" with the name of your wifi.
+   - change the "password" with the password to your wifi. 
    ![wifiConf](https://user-images.githubusercontent.com/40162593/133924649-a9d3c049-754d-466d-9421-7e13a9e42b8f.PNG)
 
-3. Open the "Serial monitor".
-4. Run the program.
-5. Look at the "Serial monitor" and open the ip adress in a browser.
+2. Open the "Serial monitor".
+3. Run the program.
+4. Look at the "Serial monitor" and open the ip address in a browser.
 ![ip](https://user-images.githubusercontent.com/40162593/133924877-ca66348f-892f-46a3-bde3-3810b59405fe.PNG)
-6. now you are done, and you will be looking at a sceren, that should look like this.
+5. now you are done, and you will be looking at a sceren, that should look like this.
 ![Webside](https://user-images.githubusercontent.com/40162593/133924949-2ae2d302-e735-4287-8878-1708a402530d.PNG)
   
 
